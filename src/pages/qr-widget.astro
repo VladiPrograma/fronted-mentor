@@ -1,0 +1,39 @@
+---
+import qr from '../assets/qr.png';
+import BasicCard from '../components/BasicCard.astro';
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+    <div class="container">
+      <BasicCard
+      image_data={qr}
+      title=' Improve your front-end skills by building projects'
+      body='Scan the QR code to visit Fronted Mentor and take your coding skills to the next level'/>
+    </div>
+	</body>
+</html>
+
+<style>
+  html {
+    font-size: 62.5%;
+  }
+  .container {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+</style>
